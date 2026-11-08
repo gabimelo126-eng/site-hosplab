@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hosplab | Equipamentos Hospitalares e Laboratoriais</title>
+  <meta name="description" content="Hosplab: comércio de materiais médicos, ortopédicos, equipamentos hospitalares e laboratoriais.">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header>
+  <a href="#inicio" class="logo"><img src="img/logo.jpg" alt="Hosplab"></a>
+  <button id="menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav id="menu">
+    <a href="#produtos">Produtos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#orcamento">Orçamento</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <h1>Equipamentos hospitalares e laboratoriais para quem cuida de pessoas</h1>
+    <p>Atendemos hospitais, clínicas, laboratórios e demais instituições de saúde, com pronta entrega e atendimento especializado.</p>
+    <a class="botao" href="#produtos">Ver produtos</a>
+    <a class="botao contorno" href="https://wa.me/5592984842126" target="_blank" rel="noopener">Falar no WhatsApp</a>
+  </section>
+
+  <section id="produtos" class="secao">
+    <h2>Nossos produtos</h2>
+    <div class="filtros">
+      <input type="search" id="busca" placeholder="Buscar produto" aria-label="Buscar produto">
+      <div id="categorias">
+        <button class="ativo" data-cat="">Todos</button>
+        <button data-cat="Colchões">Colchões</button>
+        <button data-cat="Descartáveis">Descartáveis</button>
+        <button data-cat="Equipamentos">Equipamentos</button>
+        <button data-cat="Respiratório">Respiratório</button>
+        <button data-cat="Laboratório">Laboratório</button>
+        <button data-cat="Emergência">Emergência</button>
+      </div>
+    </div>
+    <p id="contagem" class="nota"></p>
+
+    <div class="grade" id="lista">
+      <article class="card" data-categoria="Colchões"><img src="img/colchao-d33.jpg" alt="Colchão hospitalar D33" loading="lazy"><div class="info"><h3>Colchão hospitalar D33</h3><span>Colchões</span><a class="botao pequeno" href="#orcamento" data-produto="Colchão hospitalar D33">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Colchões"><img src="img/colchao-caixa-de-ovo.jpg" alt="Colchão caixa de ovo 80x188x4 DS33 laranja" loading="lazy"><div class="info"><h3>Colchão caixa de ovo 80x188x4</h3><span>Colchões</span><a class="botao pequeno" href="#orcamento" data-produto="Colchão caixa de ovo 80x188x4 DS33">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Descartáveis"><img src="img/frasco-drenagem.jpg" alt="Frasco de drenagem Soroplast 500 ml e 2000 ml" loading="lazy"><div class="info"><h3>Frasco de drenagem Soroplast</h3><span>Descartáveis</span><a class="botao pequeno" href="#orcamento" data-produto="Frasco de drenagem Soroplast">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Descartáveis"><img src="img/curatec.jpg" alt="Curatec compressa com emulsão de petrolátum" loading="lazy"><div class="info"><h3>Curatec compressa com petrolátum</h3><span>Descartáveis</span><a class="botao pequeno" href="#orcamento" data-produto="Curatec compressa com emulsão de petrolátum">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Descartáveis"><img src="img/seringa-insulina.jpg" alt="Seringa para insulina SR Insufine" loading="lazy"><div class="info"><h3>Seringa para insulina SR Insufine</h3><span>Descartáveis</span><a class="botao pequeno" href="#orcamento" data-produto="Seringa para insulina SR Insufine">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Descartáveis"><img src="img/dreno-succao.jpg" alt="Dreno de sucção sistema fechado Medix" loading="lazy"><div class="info"><h3>Dreno de sucção (510 ml)</h3><span>Descartáveis</span><a class="botao pequeno" href="#orcamento" data-produto="Dreno de sucção 510 ml">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Equipamentos"><img src="img/anestesia-sat500.jpg" alt="Aparelho de anestesia SAT500 Plus" loading="lazy"><div class="info"><h3>Aparelho de anestesia SAT500 Plus</h3><span>Equipamentos</span><a class="botao pequeno" href="#orcamento" data-produto="Aparelho de anestesia SAT500 Plus">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Equipamentos"><img src="img/oximetro-ut100.jpg" alt="Oxímetro de pulso portátil UT100" loading="lazy"><div class="info"><h3>Oxímetro de pulso portátil UT100</h3><span>Equipamentos</span><a class="botao pequeno" href="#orcamento" data-produto="Oxímetro de pulso portátil UT100">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Equipamentos"><img src="img/aspirador-md100.jpg" alt="Bomba a vácuo aspiradora MD100HP e MD100" loading="lazy"><div class="info"><h3>Bomba vácuo aspiradora MD100 / MD100HP</h3><span>Equipamentos</span><a class="botao pequeno" href="#orcamento" data-produto="Bomba vácuo aspiradora MD100 / MD100HP">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Equipamentos"><img src="img/aspiramax.jpg" alt="Aspirador clínico AspiraMax 1,3 litro" loading="lazy"><div class="info"><h3>Aspirador clínico AspiraMax</h3><span>Equipamentos</span><a class="botao pequeno" href="#orcamento" data-produto="Aspirador clínico AspiraMax">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Respiratório"><img src="img/circuito-anestesico.jpg" alt="Circuito anestésico adulto com conector em Y" loading="lazy"><div class="info"><h3>Circuito anestésico adulto</h3><span>Respiratório</span><a class="botao pequeno" href="#orcamento" data-produto="Circuito anestésico adulto">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Respiratório"><img src="img/reanimador-baraka.jpg" alt="Reanimador manual Sistema Baraka Haoxi" loading="lazy"><div class="info"><h3>Reanimador manual Sistema Baraka</h3><span>Respiratório</span><a class="botao pequeno" href="#orcamento" data-produto="Reanimador manual Sistema Baraka">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Laboratório"><img src="img/kit-gram.jpg" alt="Kit coloração de Gram Renylab" loading="lazy"><div class="info"><h3>Kit coloração de Gram Renylab</h3><span>Laboratório</span><a class="botao pequeno" href="#orcamento" data-produto="Kit coloração de Gram Renylab">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Laboratório"><img src="img/phmetro-phb550.jpg" alt="PHmetro PHB550 Incoterm" loading="lazy"><div class="info"><h3>PHmetro PHB550</h3><span>Laboratório</span><a class="botao pequeno" href="#orcamento" data-produto="PHmetro PHB550">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Laboratório"><img src="img/colilert.jpg" alt="Colilert IDEXX caixa com 200 unidades" loading="lazy"><div class="info"><h3>Colilert IDEXX (caixa c/ 200)</h3><span>Laboratório</span><a class="botao pequeno" href="#orcamento" data-produto="Colilert IDEXX caixa c/ 200">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Laboratório"><img src="img/hemoglobina-glicada.jpg" alt="Analisadores automáticos de hemoglobina glicada Vida" loading="lazy"><div class="info"><h3>Analisadores de hemoglobina glicada</h3><span>Laboratório</span><a class="botao pequeno" href="#orcamento" data-produto="Analisador de hemoglobina glicada">Pedir orçamento</a></div></article>
+      <article class="card" data-categoria="Emergência"><img src="img/prancha-resgate.jpg" alt="Prancha para resgate em polietileno" loading="lazy"><div class="info"><h3>Prancha para resgate</h3><span>Emergência</span><a class="botao pequeno" href="#orcamento" data-produto="Prancha para resgate em polietileno">Pedir orçamento</a></div></article>
+    </div>
+    <p id="vazio" class="nota" hidden>Nenhum produto encontrado. Limpe a busca ou escolha outra categoria.</p>
+  </section>
+
+  <section id="sobre" class="secao faixa">
+    <div class="texto">
+      <h2>Sobre a Hosplab</h2>
+      <p>A Hosplab é uma empresa de comércio de materiais médicos e ortopédicos, equipamentos hospitalares e produtos laboratoriais. Trabalhamos com marcas reconhecidas do setor e atendemos hospitais, clínicas, laboratórios e instituições de saúde.</p>
+      <ul>
+        <li>Pronta entrega nos itens em estoque.</li>
+        <li>Entrega segura.</li>
+        <li>Atendimento especializado pelo WhatsApp e telefone.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="orcamento" class="secao">
+    <div class="texto">
+      <h2>Solicitar orçamento</h2>
+      <div id="aviso" class="aviso" hidden></div>
+      <form action="processa.php" method="post" id="form-orcamento" novalidate>
+        <label>Nome ou empresa <input name="nome" required></label>
+        <label>Telefone <input name="telefone" id="telefone" placeholder="(92) 99999-9999" required></label>
+        <label>E-mail <input type="email" name="email" required></label>
+        <label>Produto de interesse <input name="produto" id="produto"></label>
+        <label>Mensagem <textarea name="mensagem" rows="4" required></textarea></label>
+        <button class="botao" type="submit">Enviar pedido</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contato" class="secao faixa">
+    <div class="texto">
+      <h2>Contato</h2>
+      <p><strong>Telefone:</strong> (92) 3877-0124</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/5592984842126" target="_blank" rel="noopener">(92) 98484-2126</a></p>
+      <p><strong>Endereço:</strong> Rua Ayres de Almeida, 488 - Raiz, Manaus - AM</p>
+    </div>
+  </section>
+</main>
+
+<a class="zap" href="https://wa.me/5592984842126" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WhatsApp</a>
+
+<footer><p>&copy; 2026 Hosplab. Todos os direitos reservados.</p></footer>
+
+<div id="lightbox" hidden><button aria-label="Fechar">&times;</button><img alt=""></div>
+<script src="js/script.js"></script>
+</body>
+</html>
